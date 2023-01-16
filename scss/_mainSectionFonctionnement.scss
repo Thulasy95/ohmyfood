@@ -1,0 +1,84 @@
+#fonctionnement
+{
+    background-color: $white;
+    margin: $margeLR20;
+    margin-bottom: 60px;
+    
+    h2
+    {
+        @extend .robotoH2;
+        margin: 50px 0 0 1%;
+    }
+
+    .blocListe
+    {
+        display: flex;
+    
+        h4
+        {
+            margin: 41px 0 0 0;
+            @extend .robotoH4;
+            color: $white;
+            border-radius: 12px;
+            background-color: $purple;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;  
+        }
+
+        @media screen and (min-width:$tablet)
+        {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+
+        @media screen and (min-width:$desktop)
+        {
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    }
+}
+
+
+.bloc
+{
+    width: 96.92%;
+    height: 60px;
+    margin: 25px 0 0 12px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: $lightgray70;
+    display: flex;
+    
+
+    i
+    {
+        color: $lightgray20;
+        font-size: 18px;
+        margin: 19px 9.3% 0 11%;
+    }
+
+    h5
+    {
+        @extend .robotoH4;
+        margin: 19px 0 0 0;
+    }
+
+    &:hover
+    {
+        background-color: $lightpurple;
+        cursor: pointer;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
+
+        i
+        {
+            color: $purple;
+        }
+    }
+
+}

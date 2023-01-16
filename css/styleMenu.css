@@ -1,0 +1,365 @@
+.shrikhand, #titre div h1 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 28px;
+  color: black;
+}
+
+.robotoH2, #blocEPD .blocMenu .blocPlat .articleBloc h2 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+}
+
+.robotoH3, #blocEPD .blocMenu h3 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: black;
+}
+
+.robotoH4, footer #blocPDMC #blocProposerDevenir div h4, .btn, #commander input[type=button] {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+}
+
+.robotoP, footer #blocPDMC #blocMentionsContact p, footer #blocPDMC a, #blocEPD .blocMenu .blocPlat .articleBloc .spacebetween p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+}
+
+/*---------BOUTON EXPLORER NOS RESTAURANTS & COMMANDER-----------------------------------------*/
+.btn, #commander input[type=button] {
+  height: 45px;
+  padding: 0 6.13%;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(174deg, #FF79DA, #9356DC);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+.btn:hover, #commander input[type=button]:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/*--------------BOUTON J'AIME-----------------------------------------*/
+.far, #titre div i {
+  transition-duration: 450ms;
+}
+.far:hover, #titre div i:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(174deg, #FF79DA, #9356DC);
+  font-weight: bold;
+}
+
+/*-------------Classes----------------------------------------------*/
+.textDecorationNone {
+  text-decoration: none;
+}
+
+.shift27 {
+  position: relative;
+  top: -27px;
+}
+
+.shift31 {
+  position: relative;
+  top: -31px;
+}
+
+.shift3 {
+  position: relative;
+  top: -3px;
+}
+
+/*--------------------ANIMATION APPEAR--------------------------------------------*/
+.animationAppear {
+  animation: appear 2s forwards;
+}
+.animationAppear--1 {
+  animation-delay: 1s;
+  opacity: 0;
+}
+.animationAppear--2 {
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*-----------------------------ANIMATION SELECT-----------------------------------*/
+.animationSelect {
+  height: 60px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  width: 0;
+  transition: width 0.4s ease-in-out;
+}
+.animationSelect__icon {
+  font-size: 25px;
+  width: 27px;
+  height: 27px;
+  transform: rotate(0);
+  opacity: 0;
+  transition: transform 0.4s ease-in-out, opacity 0.4s 0.1s;
+}
+.animationSelect__icon--white {
+  color: #ffffff;
+}
+
+.blocPlat:active .articlebloc, .blocPlat:hover .articlebloc {
+  width: 80%;
+}
+.blocPlat:active .animationSelect, .blocPlat:hover .animationSelect {
+  width: 20%;
+  opacity: 1;
+}
+.blocPlat:active .animationSelect__icon, .blocPlat:hover .animationSelect__icon {
+  transform: rotate(360deg);
+  opacity: 1;
+}
+
+header {
+  background-color: #ffffff;
+  height: 60px;
+  box-shadow: 0 0 4px #454545;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 7%;
+}
+header img {
+  height: 30px;
+}
+
+#titre {
+  height: 283px;
+}
+#titre img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #titre img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #titre img {
+    height: 550px;
+  }
+}
+#titre div {
+  height: 90px;
+  background-color: #f8f8f8;
+  border-radius: 35px 35px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -40px;
+  z-index: 1;
+}
+#titre div h1 {
+  margin: 0 0 0 4.4%;
+}
+#titre div i {
+  font-size: 24px;
+  width: 25px;
+  height: 25px;
+  margin-right: 9.66%;
+  color: black;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #titre {
+    height: 453px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #titre {
+    height: 603px;
+  }
+}
+
+#blocEPD {
+  background-color: #f8f8f8;
+}
+#blocEPD .blocMenu {
+  background-color: transparent;
+  padding: 0 4.4% 40px 4.4%;
+}
+#blocEPD .blocMenu h3 {
+  margin: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#blocEPD .blocMenu .barre {
+  width: 42px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin: 6px 0 0 0;
+}
+#blocEPD .blocMenu .blocPlat {
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 12px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#blocEPD .blocMenu .blocPlat:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc {
+  width: 100%;
+  height: 50px;
+  padding: 5px 5% 5px 2.9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: width 0.4s ease-in-out;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc h2 {
+  font-size: 16px;
+  margin: 0;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc .ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc .spacebetween {
+  display: flex;
+  justify-content: space-between;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc .spacebetween p {
+  font-size: 14px;
+  margin: 0;
+}
+#blocEPD .blocMenu .blocPlat .articleBloc .spacebetween .fontsize14 {
+  font-size: 14px !important;
+  display: flex;
+  align-items: flex-end;
+}
+@media screen and (min-width: 992px) {
+  #blocEPD .blocMenu {
+    width: 27%;
+    height: 275px;
+    padding: 20px 3% 40px 3%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #blocEPD {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+#commander {
+  background-color: #f8f8f8;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 992px) {
+  #commander {
+    height: 120px;
+  }
+}
+
+footer {
+  background-color: #454545;
+  height: 180px;
+  padding: 25px 6.665%;
+}
+footer #blocImage img {
+  height: 18px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  footer #blocImage img {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer #blocImage {
+    display: flex;
+    justify-content: center;
+  }
+}
+footer #blocPDMC #blocProposerDevenir div {
+  display: flex;
+  align-items: baseline;
+}
+footer #blocPDMC #blocProposerDevenir div i {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 14px;
+  width: 18px;
+  text-align: center;
+}
+footer #blocPDMC #blocProposerDevenir div h4 {
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+footer #blocPDMC #blocMentionsContact p, footer #blocPDMC a {
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+@media screen and (min-width: 768px) {
+  footer #blocPDMC {
+    height: 162px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 50px 6.665% 10px 6.665%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=styleMenu.css.map */

@@ -1,0 +1,19 @@
+#commander
+{
+    background-color: $lightgray70;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+
+    input[type="button"]
+    {
+        @extend .btn;
+    }  
+    
+    @media screen and (min-width:$desktop)
+    {
+        height: 120px;
+    }
+
+}

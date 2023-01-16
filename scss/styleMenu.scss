@@ -1,0 +1,17 @@
+@import "variables";
+@import "typography";
+@import "general";
+@import "animations";
+@import "headerMenu";
+@import "mainSectionTitre";
+@import "mainSectionMenu";
+@import "mainSectionCommander";
+@import "footer";
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    background-color: $white;
+
+}

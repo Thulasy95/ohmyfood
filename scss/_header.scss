@@ -1,0 +1,15 @@
+header 
+{
+    background-color: $white;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px $gray;
+    position: relative;
+    z-index: 1;
+    img 
+    {
+        height: 30px;
+    } 
+}

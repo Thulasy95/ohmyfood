@@ -1,0 +1,55 @@
+#localisation
+{
+    background-color: $lightgray70;
+    padding-bottom: 60px;
+
+    form
+    {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $lightgray65;
+                
+        label
+        {
+            color: $black;
+            margin-right: 18px;
+            font-size: 16px;   
+        }
+
+        input[type="search"]
+        {
+            @extend .robotoH4;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            width: 120px;
+            height: 30px;
+        }
+
+    }
+    
+    h2
+    {
+        @extend .robotoH2;
+        text-align: center;
+        margin: 40px 17.5% 0 17.5%;
+    }
+
+    h3
+    {
+        @extend .robotoH3;
+        text-align: center;
+        margin: 20px 8.7% 0 8.7%;
+    }
+
+    input[type="button"]
+    {
+        @extend .btn;
+        display: block;
+        margin: 30px auto 0 auto;
+        
+    }
+
+}

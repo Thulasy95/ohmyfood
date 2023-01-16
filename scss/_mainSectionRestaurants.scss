@@ -1,0 +1,147 @@
+#restaurants
+{
+    background-color: $lightgray70;
+    padding: 50px 5.33% 60px 5.33%;
+
+    h2
+    {
+        @extend .robotoH2;
+        margin: 0 0 25px 1%;
+    }
+
+    #blocArticles
+    {
+        height: 985px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        article
+        {
+            width: 100%;
+            height: 228px;
+            background-color: $white;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+            &:hover
+            {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);           
+            }
+
+            h4
+            {
+                width: 79px;
+                height: 27px;
+                @extend .robotoH4;
+                font-size: 14px;
+                color: $darkgreen;
+                background-color: $green;
+                margin: 0;
+                position: relative;
+                top: 12px;
+                left: 72%;
+                z-index: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (min-width:$tablet) and (max-width:$desktop)
+                {
+                    left: 594px;
+                }
+
+                @media screen and (min-width:$desktop)
+                {
+                    left: 334px;
+                }
+            }
+
+            img
+            {
+                width: 100%;
+                height: 159px;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+
+                @media screen and (min-width:$tablet) and (max-width:$desktop)
+                {
+                    height: 259px;
+                }
+            }
+
+            @media screen and (min-width:$tablet) and (max-width:$desktop)
+            {
+                width: 685px;
+                height: 328px;
+            }
+
+            @media screen and (min-width:$desktop)
+            {
+                width: 425px;
+            }
+
+        }
+
+        @media screen and (min-width:$tablet) and (max-width:$desktop)
+        {
+            height: 1390px;
+        }
+
+        @media screen and (min-width:$desktop)
+        {
+            height: 500px;
+            flex-direction: unset;
+            justify-content: space-evenly;
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media screen and (min-width:$tablet) and (max-width:$desktop)
+    {
+        padding: 50px 5.33% 60px 5.33%;
+    }
+
+    @media screen and (min-width:$desktop)
+    {
+        padding: 50px 5.33% 70px 5.33%;
+    }
+}
+
+.blocDescription
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 28px 11px 14px;
+
+    h5
+    {
+        @extend .robotoH2;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    h3
+    {
+        @extend .robotoH3;
+        font-size: 16px;
+        margin: 3px 0 0 0;
+    }
+
+    i
+    {
+        font-size: 23px;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        top: 5px;
+        background-color: transparent;
+        text-decoration: none;
+        color: $black;
+        @extend .far;
+    }
+}
+
+

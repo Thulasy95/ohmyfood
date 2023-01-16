@@ -1,0 +1,82 @@
+/*--------------------ANIMATION APPEAR--------------------------------------------*/
+
+.animationAppear
+{
+    animation: appear 2s forwards;
+
+    @for $i from 1 through 2
+    {
+        &--#{$i}
+        {
+            animation-delay: 1s*$i;
+            opacity: 0;
+        }
+    }
+}
+
+@keyframes appear
+{
+    0%
+    {
+        opacity: 0;
+        transform : translateY(30px);
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*-----------------------------ANIMATION SELECT-----------------------------------*/
+
+.animationSelect
+{
+    height: 60px;
+    border-radius: 0 15px 15px 0;
+    background-color: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    width: 0;
+    transition: width 0.4s ease-in-out;
+
+    &__icon
+    {
+        font-size: 25px;
+        width: 27px;
+        height: 27px;
+        transform: rotate(0);
+        opacity: 0;
+        transition: transform 0.4s ease-in-out, opacity 0.4s 0.1s;
+
+        &--white
+        {
+            color: $white;
+        }
+    }
+
+}
+
+.blocPlat:active, .blocPlat:hover
+{
+    .articlebloc
+    {
+        width: 80%;
+    }
+    
+    .animationSelect
+    {
+        width: 20%;
+        opacity: 1;
+
+        &__icon
+        {
+            transform: rotate(360deg);
+            opacity: 1;
+        }
+    }
+}

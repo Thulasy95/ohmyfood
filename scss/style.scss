@@ -1,0 +1,16 @@
+@import "variables";
+@import "typography";
+@import "general";
+@import "animationLoader";
+@import "header";
+@import "mainSectionLocalisation";
+@import "mainSectionFonctionnement";
+@import "mainSectionRestaurants";
+@import "footer";
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shrikhand', cursive;
+    background-color: $white;
+}

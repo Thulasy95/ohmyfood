@@ -1,0 +1,25 @@
+header 
+{
+    background-color: $white;
+    height: 60px;
+    box-shadow: 0 0 4px $gray;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a
+    {
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        left: 7%;
+    }   
+
+    img 
+    {
+        height: 30px;
+    } 
+}
+
