@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <!-- Police Shrikhand et Roboto de GoogleFont liée -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+      
+        <!-- Bibliothèque d'icones FontAwesome liée -->
+        <link href="css/fontAwesome/css/fontawesome.css" rel="stylesheet">
+        <link href="css/fontAwesome/css/brands.css" rel="stylesheet">
+        <link href="css/fontAwesome/css/solid.css" rel="stylesheet">
+        <link href="css/fontawesome5/css/all.css" rel="stylesheet">
+      
+        <!-- Fichiers CSS liés -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    
+      
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalabe=no">
+        
+        <!-- Nom et logo de l'onglet -->
+        <title>ohmyfood</title>
+
+    </head>
+
+    <body>
+
+        <div class="loaderContainer">
+            <div class="loader">
+                <div class="loader__item loader__item--purple loader__item--0">o</div>
+                <div class="loader__item loader__item--pink loader__item--1">h</div>
+                <div class="loader__item loader__item--green loader__item--2">m</div>
+                <div class="loader__item loader__item--purple loader__item--3">y</div>
+                <div class="loader__item loader__item--pink loader__item--4">f</div>
+                <div class="loader__item loader__item--green loader__item--5">o</div>
+                <div class="loader__item loader__item--purple loader__item--6">o</div>
+                <div class="loader__item loader__item--pink loader__item--7">d</div>
+            </div>
+        </div>
+
+        <header>
+           
+            <img src="images/logo/ohmyfood.png" alt="Logo ohmyfood">
+
+        </header>
+
+        <main>
+
+            <!-- SECTION Localisation -->
+            <section id="localisation">
+
+                <form method="post" action="#"> 
+                    <label class="fa-solid fa-location-dot" for="ville"></label>
+                    <input type="search" name="ville" id="ville" value="Paris, Belleville">
+                </form>    
+
+                <h2>R&eacute;servez le menu qui vous convient</h2>
+
+                <h3>D&eacute;couvrez des restaurants d'exception, s&eacute;lectionn&eacute;s par nos soins.</h3>
+               
+                <input type="button" value="Explorer nos restaurants">
+
+            </section>
+
+            <!-- SECTION Fonctionnement -->
+            <section id="fonctionnement">
+
+                <h2>Fonctionnement</h2>
+                <div class="blocListe">
+                    <h4>1</h4>
+                    <div class="bloc">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h5>Choisissez un restaurant</h5>
+                    </div>
+                </div>
+
+                <div class="blocListe">
+                    <h4>2</h4>
+                    <div class="bloc">
+                        <i class="fa-sharp fa-solid fa-list-ul"></i>
+                        <h5>Composez votre menu</h5>
+                    </div>
+                </div>
+
+                <div class="blocListe">
+                    <h4>3</h4>
+                    <div class="bloc">
+                        <i class="fa-solid fa-store"></i>
+                        <h5>D&eacute;gustez au restaurant</h5>   
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SECTION Restaurants -->
+            <section id="restaurants">
+
+                <h2>Restaurants</h2>
+                
+                <div id="blocArticles">
+                    <article>
+
+                        <a href="html/laPaletteDuGout.html" class="textDecorationNone">
+    
+                            <h4>Nouveau</h4>
+                            <img class="shift27" src="images/restaurants/laPaletteDuGout.jpg" alt="Image La palette du go&ucirc;t">
+                            
+                            <div class="blocDescription shift31">
+                                <div>
+                                    <h5>La palette du go&ucirc;t</h5>
+                                    <h3>M&eacute;nilmontant</h3>    
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </article>
+    
+                    <article>
+    
+                        <a href="html/laNoteEnchantee.html" class="textDecorationNone">
+                        
+                            <h4>Nouveau</h4>
+                            <img class="shift27" src="images/restaurants/laNoteEnchantee.jpg" alt="Image La note enchant&eacute;e">
+                            
+                            <div class="blocDescription shift31">
+                                <div>
+                                    <h5>La note enchant&eacute;e</h5>
+                                    <h3>Charonne</h3>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </article>
+    
+                    <article>
+    
+                        <a href="html/aLaFrancaise.html" class="textDecorationNone">
+                        
+                            <h4>Nouveau</h4>
+                            <img class="shift27" src="images/restaurants/aLaFrancaise.jpg" alt="Image &Agrave; la fran&ccedil;aise">
+    
+                            <div class="blocDescription shift31">
+                                <div>
+                                    <h5>&Agrave; la fran&ccedil;aise</h5>
+                                    <h3>Cit&eacute; Rouge</h3>    
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </article>
+    
+                    <article>
+    
+                        <a href="html/leDeliceDesSens.html" class="textDecorationNone">
+                        
+                            <img src="images/restaurants/leDeliceDesSens.jpg" alt="Image Le d&eacute;lice des sens">
+                            
+                            <div class="blocDescription shift3">
+                                <div>
+                                    <h5>Le d&eacute;lice des sens</h5>
+                                    <h3>Folie-M&eacute;ricourt</h3>   
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+    
+                        </a>
+                        
+                    </article>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div id="blocImage">
+                <img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
+            </div>
+            
+            <div id="blocPDMC">
+                <div id="blocProposerDevenir">
+                    <div>
+                        <i class="fa-solid fa-utensils"></i>
+                        <h4>Proposer un restaurant</h4>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <h4>Devenir partenaire</h4>
+                    </div>
+                </div>
+                <div id="blocMentionsContact">
+                    <p>Mentions l&eacute;gales</p>
+                    <a href="mailto:contactohmyfood@ohmyfood.com" class="textDecorationNone">Contact</a>
+                </div>
+            </div>
+
+        </footer>
+        
+    </body>
+
+</html>
