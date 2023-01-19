@@ -43,7 +43,7 @@
   background: linear-gradient(174deg, #FF79DA, #9356DC);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 450ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 .btn:hover, #localisation input[type=button]:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.75);
@@ -116,11 +116,9 @@
 }
 .loaderContainer .loader__item--pink {
   background-color: #FF79DA;
-  animation-delay: 0.1s;
 }
 .loaderContainer .loader__item--green {
   background-color: #99E2D0;
-  animation-delay: 0.2s;
 }
 .loaderContainer .loader__item--0 {
   animation-delay: 0s;

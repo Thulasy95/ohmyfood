@@ -118,9 +118,9 @@
   transition: width 0.4s ease-in-out;
 }
 .animationSelect__icon {
-  font-size: 25px;
-  width: 27px;
-  height: 27px;
+  font-size: 20px;
+  width: 21px;
+  height: 21px;
   transform: rotate(0);
   opacity: 0;
   transition: transform 0.4s ease-in-out, opacity 0.4s 0.1s;
@@ -130,10 +130,10 @@
 }
 
 .blocPlat:active .articlebloc, .blocPlat:hover .articlebloc {
-  width: 80%;
+  padding-right: 65px;
 }
 .blocPlat:active .animationSelect, .blocPlat:hover .animationSelect {
-  width: 20%;
+  width: 65px;
   opacity: 1;
 }
 .blocPlat:active .animationSelect__icon, .blocPlat:hover .animationSelect__icon {
@@ -250,7 +250,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transition: width 0.4s ease-in-out;
+  transition: margin-right 0.4s ease-in-out;
 }
 #blocEPD .blocMenu .blocPlat .articleBloc h2 {
   font-size: 16px;
@@ -260,7 +260,12 @@ header img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 85%;
+  width: 240px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #blocEPD .blocMenu .blocPlat .articleBloc .ellipsis {
+    width: 300px;
+  }
 }
 #blocEPD .blocMenu .blocPlat .articleBloc .spacebetween {
   display: flex;
