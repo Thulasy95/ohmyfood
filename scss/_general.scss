@@ -32,7 +32,9 @@
     &:hover
     {
         color: transparent;
+        -webkit-text-fill-color:transparent;
         background-clip: text;
+        -webkit-background-clip: text;
         background-image: linear-gradient(174deg, $pink, $purple);
         font-weight: bold;
     }
