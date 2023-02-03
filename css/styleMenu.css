@@ -57,7 +57,9 @@
 }
 .far:hover, #titre div i:hover {
   color: transparent;
+  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-background-clip: text;
   background-image: linear-gradient(174deg, #FF79DA, #9356DC);
   font-weight: bold;
 }
